@@ -21,7 +21,7 @@ REM LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM
 REM OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 REM SOFTWARE.
 
-echo Please enter the name for the virtual enviroment that you would like to create:
+echo Please enter a name for the virtual enviroment that you would like to create:
 set /p venv=
 cd C:\Users\Julian Fechner\pyproj
 call "C:\Users\Julian Fechner\pyver\py391\python" -m venv %venv%
