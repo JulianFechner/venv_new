@@ -35,10 +35,11 @@ IF NOT '%choice%'=='y' GOTO else
 IF NOT '%choice%'=='Y' GOTO else
 
 :yes
-call "C:\Users\Julian Fechner\pyproj\%venv%\Scripts\activate.bat"
+call "C:\Users\Julian Fechner\pyproj\%venv%\Scripts\activate"
 cd C:\Users\Julian Fechner\pyproj\%venv%
+pip install --upgrade pip
+pip install -r requirements.txt
 python -m idlelib.idle
-exit
 
 :else
 exit
