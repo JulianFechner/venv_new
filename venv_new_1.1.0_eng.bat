@@ -23,7 +23,7 @@ REM SOFTWARE.
 
 echo Please enter a name for the virtual enviroment that you would like to create:
 set /p venv=
-cd C:\Users\Julian Fechner\pyproj
+cd "C:\Users\Julian Fechner\pyproj"
 call "C:\Program Files\python\pyver392\python" -m venv %venv%
 
 cd "C:\Users\Julian Fechner\pyproj\%venv%"
@@ -68,7 +68,7 @@ IF NOT '%choice%'=='Y' GOTO else
 
 :yes
 call "C:\Users\Julian Fechner\pyproj\%venv%\Scripts\activate"
-cd C:\Users\Julian Fechner\pyproj\%venv%
+cd "C:\Users\Julian Fechner\pyproj\%venv%"
 pip install --upgrade pip
 pip install -r requirements.txt
 python -m idlelib.idle
