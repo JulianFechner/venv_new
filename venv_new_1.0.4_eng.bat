@@ -24,7 +24,7 @@ REM SOFTWARE.
 echo Please enter a name for the virtual enviroment that you would like to create:
 set /p venv=
 cd C:\Users\Julian Fechner\pyproj
-call "C:\Users\Julian Fechner\pyver\py391\python" -m venv %venv%
+call "C:\Program Files\python\pyver392\python" -m venv %venv%
 
 echo Would you like to enter the created virtual enviroment? y/n
 set /p choice=
