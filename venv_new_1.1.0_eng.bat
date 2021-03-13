@@ -26,6 +26,8 @@ set /p venv=
 cd C:\Users\Julian Fechner\pyproj
 call "C:\Program Files\python\pyver392\python" -m venv %venv%
 
+cd "C:\Users\Julian Fechner\pyproj\%venv%"
+
 echo.>"C:\Users\Julian Fechner\pyproj\%venv%\LICENSE.md"
 
 (	echo MIT License
